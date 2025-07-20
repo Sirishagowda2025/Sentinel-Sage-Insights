@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AlertTriangle, TrendingUp, Users, MessageCircle, Upload, Download, Settings, LogOut } from 'lucide-react';
 import Index from './pages/Index';
 import LoginForm from './components/LoginForm';
+import UserDetailsForm, { UserDetails } from './components/UserDetailsForm';
 import DataManagement from './components/DataManagement';
 import CSATPrediction from './components/CSATPrediction';
 import SupportTeamCoach from './components/SupportTeamCoach';
@@ -30,6 +31,8 @@ interface User {
   email: string;
   name: string;
   role: string;
+  fullName?: string;
+  company?: string;
 }
 
 function App() {
@@ -41,7 +44,7 @@ function App() {
   const [processedData, setProcessedData] = useState<ProcessedData | null>(null);
   const [showSettings, setShowSettings] = useState(false);
   const [acknowledgedAlerts, setAcknowledgedAlerts] = useState<string[]>([]);
-  const [currentView, setCurrentView] = useState<'welcome' | 'login' | 'upload' | 'dashboard'>('welcome');
+  const [currentView, setCurrentView] = useState<'welcome' | 'login' | 'details' | 'upload' | 'dashboard'>('welcome');
   const [totalProcessed, setTotalProcessed] = useState(0);
   const [showWelcome, setShowWelcome] = useState(false);
   const [showAgentInsights, setShowAgentInsights] = useState(false);
@@ -58,14 +61,25 @@ function App() {
   }, [data]);
 
   const handleGetStarted = () => {
-    setCurrentView('login');
+    setCurrentView('details');
+  };
+
+  const handleUserDetails = (userDetails: UserDetails) => {
+    setUser({
+      email: userDetails.email,
+      name: userDetails.fullName,
+      role: userDetails.role,
+      fullName: userDetails.fullName,
+      company: userDetails.company
+    });
+    setCurrentView('upload');
   };
 
   const handleLogin = (email: string) => {
     setUser({
       email,
       name: email.split('@')[0],
-      role: 'Support Manager'
+      role: 'Demo User'
     });
     setCurrentView('upload');
   };
@@ -74,7 +88,7 @@ function App() {
     setUser(null);
     setData([]);
     setProcessedData(null);
-    setCurrentView('upload');
+    setCurrentView('welcome');
     localStorage.removeItem('welcomeShown');
   };
 
@@ -142,6 +156,15 @@ function App() {
     return (
       <TooltipProvider>
         <Index onGetStarted={handleGetStarted} />
+        <Toaster />
+      </TooltipProvider>
+    );
+  }
+
+  if (currentView === 'details') {
+    return (
+      <TooltipProvider>
+        <UserDetailsForm onComplete={handleUserDetails} />
         <Toaster />
       </TooltipProvider>
     );

@@ -85,7 +85,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
               <Button
                 onClick={handleDemoLogin}
                 variant="outline"
-                className="w-full border-purple-300 text-white bg-purple-600/30 hover:bg-purple-500/40"
+                className="w-full bg-white text-black border border-gray-300 hover:bg-gray-50"
               >
                 Try Demo Account
               </Button>

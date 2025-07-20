@@ -17,25 +17,39 @@ const Index: React.FC<IndexProps> = ({ onGetStarted }) => {
             <Brain className="h-12 w-12 text-white" />
           </div>
           
-          <h1 className="text-5xl font-bold text-white mb-4">
-            Customer Sentiment Watchdog
+          <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
+            Welcome to Sentinel Sage Insights
           </h1>
-          <h2 className="text-xl text-blue-100 mb-6">
-            for Support Teams
-          </h2>
           
           <p className="text-2xl text-blue-100 mb-8 font-medium">
+            AI-powered Sentiment Watchdog for Support Teams
+          </p>
+          
+          <p className="text-xl text-blue-100 mb-8">
             Monitor emotional trends in real-time. Prevent escalations. Delight customers.
           </p>
           
-          <Button 
-            onClick={onGetStarted}
-            size="lg"
-            className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-6 h-auto"
-          >
-            Get Started
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <div className="space-y-4">
+            <Button 
+              onClick={onGetStarted}
+              size="lg"
+              className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-6 h-auto"
+            >
+              Get Started
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            
+            <p className="text-blue-200 text-sm">
+              or{' '}
+              <Button 
+                variant="outline"
+                size="sm"
+                className="bg-white text-black border border-gray-300 hover:bg-gray-50 mx-1"
+              >
+                Try Demo
+              </Button>
+            </p>
+          </div>
         </div>
 
         {/* Features Grid */}
