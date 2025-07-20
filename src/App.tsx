@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AlertTriangle, TrendingUp, Users, MessageCircle, Upload, Download, Settings, LogOut } from 'lucide-react';
+import Index from './pages/Index';
 import LoginForm from './components/LoginForm';
 import DataManagement from './components/DataManagement';
 import CSATPrediction from './components/CSATPrediction';
@@ -40,7 +41,7 @@ function App() {
   const [processedData, setProcessedData] = useState<ProcessedData | null>(null);
   const [showSettings, setShowSettings] = useState(false);
   const [acknowledgedAlerts, setAcknowledgedAlerts] = useState<string[]>([]);
-  const [currentView, setCurrentView] = useState<'upload' | 'dashboard'>('upload');
+  const [currentView, setCurrentView] = useState<'welcome' | 'login' | 'upload' | 'dashboard'>('welcome');
   const [totalProcessed, setTotalProcessed] = useState(0);
   const [showWelcome, setShowWelcome] = useState(false);
   const [showAgentInsights, setShowAgentInsights] = useState(false);
@@ -56,12 +57,17 @@ function App() {
     setFilteredData(data);
   }, [data]);
 
+  const handleGetStarted = () => {
+    setCurrentView('login');
+  };
+
   const handleLogin = (email: string) => {
     setUser({
       email,
       name: email.split('@')[0],
       role: 'Support Manager'
     });
+    setCurrentView('upload');
   };
 
   const handleLogout = () => {
@@ -132,7 +138,16 @@ function App() {
     setFilteredData(filtered);
   };
 
-  if (!user) {
+  if (currentView === 'welcome') {
+    return (
+      <TooltipProvider>
+        <Index onGetStarted={handleGetStarted} />
+        <Toaster />
+      </TooltipProvider>
+    );
+  }
+
+  if (currentView === 'login') {
     return (
       <TooltipProvider>
         <LoginForm onLogin={handleLogin} />

@@ -74,7 +74,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
 
               <Button
                 type="submit"
-                className="w-full bg-white text-blue-600 hover:bg-blue-50"
+                className="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white hover:from-green-600 hover:to-blue-600"
               >
                 <LogIn className="w-4 h-4 mr-2" />
                 Sign In
@@ -85,7 +85,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
               <Button
                 onClick={handleDemoLogin}
                 variant="outline"
-                className="w-full border-white/20 text-white hover:bg-white/10"
+                className="w-full border-purple-300 text-white bg-purple-600/30 hover:bg-purple-500/40"
               >
                 Try Demo Account
               </Button>
