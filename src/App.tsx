@@ -147,7 +147,7 @@ function App() {
     );
   }
 
-  if (currentView === 'login') {
+  if (currentView === 'login' || !user) {
     return (
       <TooltipProvider>
         <LoginForm onLogin={handleLogin} />
