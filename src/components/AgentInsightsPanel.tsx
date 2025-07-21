@@ -2,6 +2,7 @@ import React from 'react';
 import { X, Brain, AlertTriangle, TrendingUp, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useToast } from '@/hooks/use-toast';
 import { SentimentData } from '../types';
 
 interface AgentInsightsPanelProps {
@@ -10,6 +11,7 @@ interface AgentInsightsPanelProps {
 }
 
 const AgentInsightsPanel: React.FC<AgentInsightsPanelProps> = ({ data, onClose }) => {
+  const { toast } = useToast();
   const negativeCount = data.filter(d => d.sentiment < -0.3).length;
   const recentNegative = data.filter(d => d.sentiment < -0.3).slice(0, 3);
   const commonKeywords = data.reduce((acc, curr) => {
@@ -31,6 +33,13 @@ const AgentInsightsPanel: React.FC<AgentInsightsPanelProps> = ({ data, onClose }
     'Schedule customer retention outreach calls',
     'Implement proactive communication for at-risk accounts'
   ];
+
+  const handleNotifyTeam = () => {
+    toast({
+      title: "Team Notification Sent! 📧",
+      description: `Alert sent to team lead about ${negativeCount} frustrated customers requiring immediate attention.`,
+    });
+  };
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
@@ -131,7 +140,7 @@ const AgentInsightsPanel: React.FC<AgentInsightsPanelProps> = ({ data, onClose }
               <Button className="flex-1" onClick={onClose}>
                 ✅ Acknowledge Alert
               </Button>
-              <Button variant="outline" className="flex-1">
+              <Button variant="outline" className="flex-1" onClick={handleNotifyTeam}>
                 📧 Notify Team Lead
               </Button>
             </div>

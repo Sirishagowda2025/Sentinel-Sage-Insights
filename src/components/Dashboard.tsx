@@ -45,7 +45,15 @@ const Dashboard: React.FC<DashboardProps> = ({ data }) => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="space-y-6">
+      {/* Dashboard Header */}
+      <div className="text-center">
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">SentinelSage Dashboard</h1>
+        <p className="text-gray-600">AI-Powered Customer Sentiment Analysis</p>
+      </div>
+      
+      {/* Stats Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {stats.map((stat, index) => (
         <Card key={index}>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -62,6 +70,7 @@ const Dashboard: React.FC<DashboardProps> = ({ data }) => {
           </CardContent>
         </Card>
       ))}
+      </div>
     </div>
   );
 };
