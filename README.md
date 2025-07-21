@@ -51,13 +51,8 @@ Modern support teams face increasing volumes of customer interactions, making it
 - **Data Handling:** CSV ingestion via browser
 - **Deployment:** Lovable no-code platform
   
-## 📦 Sample Data Format
-
-```csv
-customer_email,message,channel
-user1@example.com,"I’m very upset with the delay!",Chat
-user2@example.com,"Great service as always!",Email
-```
+## 📦 Sample Data Format 
+[customer_sentiment_watchdog_sample_data.csv]
 
 ## 🚀 Getting Started
 
