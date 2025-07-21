@@ -128,8 +128,14 @@ function App() {
       }
 
       // Show agent insights if negative sentiment detected
-      if (uploadedData.filter(d => d.sentiment < -0.3).length > 2) {
-        setShowAgentInsights(true);
+      const negativeCount = uploadedData.filter(d => d.sentiment < -0.3).length;
+      const negativePercentage = (negativeCount / uploadedData.length) * 100;
+      
+      // Show alert if we have any significant negative sentiment (1+ negative OR 20%+ negative)
+      if (negativeCount > 0 && negativePercentage >= 20) {
+        setTimeout(() => {
+          setShowAgentInsights(true);
+        }, 3000); // Show after 3 seconds to let dashboard load first
       }
     }, 2000);
   };
