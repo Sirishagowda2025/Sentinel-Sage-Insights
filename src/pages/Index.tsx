@@ -29,7 +29,6 @@ const Index: React.FC<IndexProps> = ({ onGetStarted }) => {
             Monitor emotional trends in real-time. Prevent escalations. Delight customers.
           </p>
           
-          <div className="space-y-4">
             <Button 
               onClick={onGetStarted}
               size="lg"
@@ -38,18 +37,6 @@ const Index: React.FC<IndexProps> = ({ onGetStarted }) => {
               Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            
-            <p className="text-blue-200 text-sm">
-              or{' '}
-              <Button 
-                variant="outline"
-                size="sm"
-                className="bg-white text-black border border-gray-300 hover:bg-gray-50 mx-1"
-              >
-                Try Demo
-              </Button>
-            </p>
-          </div>
         </div>
 
         {/* Features Grid */}

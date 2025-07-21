@@ -172,6 +172,22 @@ const UserDetailsForm: React.FC<UserDetailsFormProps> = ({ onComplete }) => {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </form>
+            
+            <div className="mt-6 pt-6 border-t border-white/20">
+              <Button 
+                onClick={() => onComplete({ 
+                  fullName: 'Demo User', 
+                  email: 'demo@sentinelsage.ai', 
+                  role: 'Support Agent', 
+                  company: 'Demo Company',
+                  agreedToTerms: true 
+                })}
+                variant="outline"
+                className="w-full bg-white text-black border border-gray-300 hover:bg-gray-50"
+              >
+                Try Demo Without Details
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </div>
