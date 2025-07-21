@@ -43,12 +43,12 @@ const AgentInsightsPanel: React.FC<AgentInsightsPanelProps> = ({ data, onClose }
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-      <Card className="max-w-2xl w-full max-h-[90vh] overflow-y-auto border-2 border-red-300 bg-red-50">
-        <CardHeader>
+      <Card className="max-w-2xl w-full max-h-[90vh] overflow-y-auto border-2 border-red-500 bg-red-50 shadow-2xl">
+        <CardHeader className="bg-red-100 border-b border-red-200">
           <div className="flex items-center justify-between">
-            <CardTitle className="flex items-center gap-2 text-red-800">
-              <AlertTriangle className="h-6 w-6" />
-              🚨 Agent Alert: Sentiment Spike Detected
+            <CardTitle className="flex items-center gap-2 text-red-800 text-xl font-bold">
+              <AlertTriangle className="h-6 w-6 text-red-600" />
+              🚨 Agent Alert: Negative Sentiment Spike Detected
             </CardTitle>
             <Button variant="ghost" size="sm" onClick={onClose}>
               <X className="h-5 w-5" />

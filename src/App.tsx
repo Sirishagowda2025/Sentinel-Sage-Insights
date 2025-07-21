@@ -131,11 +131,11 @@ function App() {
       const negativeCount = uploadedData.filter(d => d.sentiment < -0.3).length;
       const negativePercentage = (negativeCount / uploadedData.length) * 100;
       
-      // Show alert if we have any significant negative sentiment (1+ negative OR 20%+ negative)
-      if (negativeCount > 0 && negativePercentage >= 20) {
+      // Show alert if we have any negative sentiment (lowered threshold for demo)
+      if (negativeCount >= 1) {
         setTimeout(() => {
           setShowAgentInsights(true);
-        }, 3000); // Show after 3 seconds to let dashboard load first
+        }, 2000); // Show after 2 seconds to let dashboard load first
       }
     }, 2000);
   };
