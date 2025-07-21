@@ -1,0 +1,51 @@
+Ticket ID,Date,Channel,Issue Type,Detected Emotion,Agent,Customer Message
+TKT1001,2025-07-15,Phone,Account Locked,Negative,David,Customer reported: Account Locked. Emotion detected: Negative.
+TKT1002,2025-07-20,Phone,Delayed Delivery,Positive,Sara,Customer reported: Delayed Delivery. Emotion detected: Positive.
+TKT1003,2025-07-19,Email,Billing Dispute,Negative,Amit,Customer reported: Billing Dispute. Emotion detected: Negative.
+TKT1004,2025-07-16,Web Form,Technical Error,Negative,Sara,Customer reported: Technical Error. Emotion detected: Negative.
+TKT1005,2025-07-15,Web Form,Technical Error,Negative,Riya,Customer reported: Technical Error. Emotion detected: Negative.
+TKT1006,2025-07-19,Chat,Delayed Delivery,Negative,Riya,Customer reported: Delayed Delivery. Emotion detected: Negative.
+TKT1007,2025-07-17,Phone,Billing Dispute,Neutral,Riya,Customer reported: Billing Dispute. Emotion detected: Neutral.
+TKT1008,2025-07-16,Phone,Delayed Delivery,Negative,Amit,Customer reported: Delayed Delivery. Emotion detected: Negative.
+TKT1009,2025-07-20,Web Form,Account Locked,Positive,David,Customer reported: Account Locked. Emotion detected: Positive.
+TKT1010,2025-07-17,Email,Technical Error,Positive,David,Customer reported: Technical Error. Emotion detected: Positive.
+TKT1011,2025-07-19,Chat,Delayed Delivery,Neutral,Sara,Customer reported: Delayed Delivery. Emotion detected: Neutral.
+TKT1012,2025-07-19,Email,Technical Error,Neutral,Riya,Customer reported: Technical Error. Emotion detected: Neutral.
+TKT1013,2025-07-18,Email,Refund Request,Neutral,Riya,Customer reported: Refund Request. Emotion detected: Neutral.
+TKT1014,2025-07-19,Chat,Refund Request,Negative,Amit,Customer reported: Refund Request. Emotion detected: Negative.
+TKT1015,2025-07-16,Email,Account Locked,Neutral,Amit,Customer reported: Account Locked. Emotion detected: Neutral.
+TKT1016,2025-07-17,Chat,Account Locked,Neutral,Sara,Customer reported: Account Locked. Emotion detected: Neutral.
+TKT1017,2025-07-20,Chat,Refund Request,Neutral,Amit,Customer reported: Refund Request. Emotion detected: Neutral.
+TKT1018,2025-07-20,Phone,Delayed Delivery,Positive,Riya,Customer reported: Delayed Delivery. Emotion detected: Positive.
+TKT1019,2025-07-16,Phone,Technical Error,Positive,Riya,Customer reported: Technical Error. Emotion detected: Positive.
+TKT1020,2025-07-20,Email,Technical Error,Neutral,David,Customer reported: Technical Error. Emotion detected: Neutral.
+TKT1021,2025-07-15,Web Form,Technical Error,Positive,Amit,Customer reported: Technical Error. Emotion detected: Positive.
+TKT1022,2025-07-17,Chat,Delayed Delivery,Neutral,Amit,Customer reported: Delayed Delivery. Emotion detected: Neutral.
+TKT1023,2025-07-15,Chat,Billing Dispute,Neutral,David,Customer reported: Billing Dispute. Emotion detected: Neutral.
+TKT1024,2025-07-17,Web Form,Technical Error,Neutral,Riya,Customer reported: Technical Error. Emotion detected: Neutral.
+TKT1025,2025-07-15,Email,Refund Request,Positive,Amit,Customer reported: Refund Request. Emotion detected: Positive.
+TKT1026,2025-07-20,Email,Account Locked,Neutral,Sara,Customer reported: Account Locked. Emotion detected: Neutral.
+TKT1027,2025-07-20,Chat,Account Locked,Negative,Sara,Customer reported: Account Locked. Emotion detected: Negative.
+TKT1028,2025-07-19,Phone,Account Locked,Negative,Amit,Customer reported: Account Locked. Emotion detected: Negative.
+TKT1029,2025-07-18,Web Form,Account Locked,Negative,Amit,Customer reported: Account Locked. Emotion detected: Negative.
+TKT1030,2025-07-18,Phone,Billing Dispute,Neutral,Amit,Customer reported: Billing Dispute. Emotion detected: Neutral.
+TKT1031,2025-07-15,Phone,Technical Error,Positive,David,Customer reported: Technical Error. Emotion detected: Positive.
+TKT1032,2025-07-16,Web Form,Refund Request,Negative,Sara,Customer reported: Refund Request. Emotion detected: Negative.
+TKT1033,2025-07-16,Email,Technical Error,Neutral,David,Customer reported: Technical Error. Emotion detected: Neutral.
+TKT1034,2025-07-16,Phone,Delayed Delivery,Positive,Riya,Customer reported: Delayed Delivery. Emotion detected: Positive.
+TKT1035,2025-07-16,Chat,Billing Dispute,Positive,Sara,Customer reported: Billing Dispute. Emotion detected: Positive.
+TKT1036,2025-07-18,Email,Account Locked,Neutral,Amit,Customer reported: Account Locked. Emotion detected: Neutral.
+TKT1037,2025-07-15,Web Form,Delayed Delivery,Positive,Riya,Customer reported: Delayed Delivery. Emotion detected: Positive.
+TKT1038,2025-07-16,Phone,Technical Error,Positive,Amit,Customer reported: Technical Error. Emotion detected: Positive.
+TKT1039,2025-07-18,Email,Delayed Delivery,Positive,Sara,Customer reported: Delayed Delivery. Emotion detected: Positive.
+TKT1040,2025-07-16,Email,Billing Dispute,Neutral,Amit,Customer reported: Billing Dispute. Emotion detected: Neutral.
+TKT1041,2025-07-16,Email,Technical Error,Neutral,Sara,Customer reported: Technical Error. Emotion detected: Neutral.
+TKT1042,2025-07-20,Chat,Delayed Delivery,Negative,Sara,Customer reported: Delayed Delivery. Emotion detected: Negative.
+TKT1043,2025-07-19,Chat,Delayed Delivery,Positive,Sara,Customer reported: Delayed Delivery. Emotion detected: Positive.
+TKT1044,2025-07-18,Web Form,Billing Dispute,Negative,Sara,Customer reported: Billing Dispute. Emotion detected: Negative.
+TKT1045,2025-07-17,Phone,Billing Dispute,Negative,Amit,Customer reported: Billing Dispute. Emotion detected: Negative.
+TKT1046,2025-07-20,Chat,Billing Dispute,Negative,Sara,Customer reported: Billing Dispute. Emotion detected: Negative.
+TKT1047,2025-07-17,Web Form,Technical Error,Neutral,Riya,Customer reported: Technical Error. Emotion detected: Neutral.
+TKT1048,2025-07-18,Email,Refund Request,Neutral,Amit,Customer reported: Refund Request. Emotion detected: Neutral.
+TKT1049,2025-07-15,Phone,Technical Error,Negative,Amit,Customer reported: Technical Error. Emotion detected: Negative.
+TKT1050,2025-07-18,Web Form,Technical Error,Positive,David,Customer reported: Technical Error. Emotion detected: Positive.
