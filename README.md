@@ -12,7 +12,7 @@ Modern support teams face increasing volumes of customer interactions, making it
 - Suggests proactive actions to reduce churn
 - Generates weekly summaries for CX leaders
 
-> This project was built in **72 hours** as part of the AI Agent Hackathon by [Product Space].
+> This project was built in **72 hours** as part of the AI Agent Hackathon by Product Space.
 
 ## 💡 Features
 
@@ -50,20 +50,21 @@ Modern support teams face increasing volumes of customer interactions, making it
 - **Agent Logic:** OpenAI GPT-4 + Custom Sentiment Classifier
 - **Data Handling:** CSV ingestion via browser
 - **Deployment:** Lovable no-code platform
-
-## 🚀 Getting Started
-
-1. Visit the app: _(deployment link, if publicly shared)_
-2. Upload your support data in `.csv` format
-3. Explore the dashboard, insights, and reports
-4. Let the agent take care of monitoring & alerting
-
+  
 ## 📦 Sample Data Format
 
 ```csv
 customer_email,message,channel
 user1@example.com,"I’m very upset with the delay!",Chat
 user2@example.com,"Great service as always!",Email
+```
+
+## 🚀 Getting Started
+
+1. Visit the app:https://sentinel-sage-insights.lovable.app/_
+2. Upload your support data in `.csv` format
+3. Explore the dashboard, insights, and reports
+4. Let the agent take care of monitoring & alerting
 
 ## 👩‍💻 About Me
 Sirisha D
