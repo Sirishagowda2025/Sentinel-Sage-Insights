@@ -1,73 +1,79 @@
-# Welcome to your Lovable project
+# SentinelSage – AI Sentiment Watchdog for Support Teams 🚨🧠
 
-## Project info
+SentinelSage is an AI-powered agent that acts as your real-time customer sentiment watchdog. Designed to help support teams detect rising frustration or satisfaction trends across emails, chats, and tickets — **before issues escalate**.
 
-**URL**: https://lovable.dev/projects/a8ea98bc-2914-4afe-b810-9371db3f27ca
+## 🔍 Overview
 
-## How can I edit this code?
+Modern support teams face increasing volumes of customer interactions, making it difficult to manually spot sentiment patterns or emerging problems. **SentinelSage** solves this with an autonomous agent that:
 
-There are several ways of editing your application.
+- Analyzes every support message instantly
+- Tags emotional tone (anger, confusion, delight, etc.)
+- Raises real-time alerts on sentiment spikes
+- Suggests proactive actions to reduce churn
+- Generates weekly summaries for CX leaders
 
-**Use Lovable**
+> This project was built in **72 hours** as part of the AI Agent Hackathon by [Product Space].
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a8ea98bc-2914-4afe-b810-9371db3f27ca) and start prompting.
+## 💡 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+### 1. 🧠 Real-time Sentiment Analysis
+- Detects emotional tone for every customer interaction
+- Categorizes into Positive, Neutral, or Negative
+- AI-powered confidence scores on every classification
 
-**Use your preferred IDE**
+### 2. 🚨 Spike Detection & Alerts
+- Triggers alerts when negative sentiment exceeds threshold
+- Shows cause breakdown and urgency level
+- Suggests smart actions (e.g., team training, outreach)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 3. 📈 Interactive Dashboards
+- Filter messages by sentiment, agent, or channel
+- Dive into high-risk conversations immediately
+- Monitor trends over time
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 4. 🧾 Weekly CX Summaries
+- Auto-generates summaries with key insights
+- CSAT trends, top issues, and team tips
+- Sent directly to CX leaders’ inboxes
 
-Follow these steps:
+### 5. 👩‍💼 Support Team Coach
+- Tracks agent-wise performance based on sentiment handled
+- Personalized coaching tips for improvement
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 6. 🔮 CSAT Prediction Engine
+- Predicts Customer Satisfaction Score (CSAT) per interaction
+- Highlights high-churn risk users
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## ⚙️ Tech Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Frontend:** Lovable + TailwindCSS
+- **Agent Logic:** OpenAI GPT-4 + Custom Sentiment Classifier
+- **Data Handling:** CSV ingestion via browser
+- **Deployment:** Lovable no-code platform
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🚀 Getting Started
 
-**Edit a file directly in GitHub**
+1. Visit the app: _(deployment link, if publicly shared)_
+2. Upload your support data in `.csv` format
+3. Explore the dashboard, insights, and reports
+4. Let the agent take care of monitoring & alerting
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📦 Sample Data Format
 
-**Use GitHub Codespaces**
+```csv
+customer_email,message,channel
+user1@example.com,"I’m very upset with the delay!",Chat
+user2@example.com,"Great service as always!",Email
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 👩‍💻 About Me
+Sirisha D
+Final Year Student
+Sambhram Institute of Technology, Bangalore
+🔗 LinkedIn - https://www.linkedin.com/in/sirisha-d-064b69278/
 
-## What technologies are used for this project?
+## 🏁 Final Words
+Built with 💡, data, and a passion for real-world impact.
+SentinelSage brings AI intuition to support desks —
+Detect frustration before it escalates. Delight before it’s missed.
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a8ea98bc-2914-4afe-b810-9371db3f27ca) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
